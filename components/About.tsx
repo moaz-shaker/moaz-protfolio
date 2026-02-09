@@ -123,7 +123,7 @@ const About: React.FC = memo(() => {
                   <motion.path
                     d="M 5 35 L 30 20 L 55 28 L 95 5"
                     fill="none"
-                    stroke="#FCDD00"
+                    stroke="#8B5CF6"
                     strokeWidth="4"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -223,7 +223,7 @@ const About: React.FC = memo(() => {
             <StatCard
               icon={MapPin}
               label="Location"
-              value="Cairo / Riyadh"
+              value="Saudi Arabia / UAE"
               color="#F97316"
               delay={0.2}
             />

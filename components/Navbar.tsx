@@ -6,6 +6,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 interface NavbarProps {
     currentView: string;
     onNavigate: (view: string) => void;
+    isContactOpen: boolean;
+    onContactToggle: () => void;
 }
 
 const GithubIcon = memo(({ className = "" }: { className?: string }) => (
@@ -32,7 +34,7 @@ const menuItems = [
     { name: 'Home', icon: Home },
     { name: 'Skills', icon: Zap },
     { name: 'About', icon: User },
-    { name: 'Works', icon: Briefcase }
+    { name: 'Projects', icon: Briefcase }
 ] as const;
 
 const socialLinks = [
@@ -52,7 +54,7 @@ const LogoSVG = memo(() => (
         className="drop-shadow-sm"
     >
         <g fill="none">
-            <path fill="#48eeff" stroke="#231f20" strokeMiterlimit="10" d="M38.75 20a33 33 0 0 0-1.54-10c0-.51-3.25-4.12-6.56-5.92S21.92.18 19.5.54c-1.66-.06-6.66 1.7-10.06 3.55S3.06 8.68 2.91 9.56A34.3 34.3 0 0 0 1.25 20a34.3 34.3 0 0 0 1.66 10.44c.15.87 3.09 3.56 6.53 5.47s8.4 3.61 10.06 3.55c2.42.36 7.73-1.69 11.15-3.55s6.6-5.41 6.56-5.92A33 33 0 0 0 38.75 20Z" strokeWidth="1" />
+            <path fill="#8B5CF6" stroke="#231f20" strokeMiterlimit="10" d="M38.75 20a33 33 0 0 0-1.54-10c0-.51-3.25-4.12-6.56-5.92S21.92.18 19.5.54c-1.66-.06-6.66 1.7-10.06 3.55S3.06 8.68 2.91 9.56A34.3 34.3 0 0 0 1.25 20a34.3 34.3 0 0 0 1.66 10.44c.15.87 3.09 3.56 6.53 5.47s8.4 3.61 10.06 3.55c2.42.36 7.73-1.69 11.15-3.55s6.6-5.41 6.56-5.92A33 33 0 0 0 38.75 20Z" strokeWidth="1" />
             <path stroke="#231f20" strokeLinecap="round" strokeMiterlimit="10" d="M7.25 14.32c.71.54 1.46 1 2.19 1.51C12.85 18 18.13 20.11 20.59 20c1.65-.1 6.65-2 10.06-4.12c.72-.45 1.43-.95 2.1-1.46" strokeWidth="1" />
             <path stroke="#231f20" strokeLinecap="round" strokeMiterlimit="10" d="M20 32.5V22.32c0-2.32 1.73-2.57 1.73-2.57" strokeWidth="1" />
             <path stroke="#231f20" strokeLinecap="round" strokeMiterlimit="10" d="M20 22.32a2.59 2.59 0 0 0-1.71-2.64" strokeWidth="1" />
@@ -63,13 +65,11 @@ const LogoSVG = memo(() => (
 
 LogoSVG.displayName = 'LogoSVG';
 
-const Navbar: React.FC<NavbarProps> = memo(({ currentView, onNavigate }) => {
+const Navbar: React.FC<NavbarProps> = memo(({ currentView, onNavigate, isContactOpen, onContactToggle }) => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const [isContactOpen, setIsContactOpen] = useState(false);
 
     const handleMobileMenuOpen = useCallback(() => setIsMobileMenuOpen(true), []);
     const handleMobileMenuClose = useCallback(() => setIsMobileMenuOpen(false), []);
-    const handleContactToggle = useCallback(() => setIsContactOpen(prev => !prev), []);
     const handleHomeClick = useCallback(() => onNavigate('Home'), [onNavigate]);
 
     const handleMobileNavClick = useCallback((name: string) => {
@@ -184,7 +184,7 @@ const Navbar: React.FC<NavbarProps> = memo(({ currentView, onNavigate }) => {
 
                         <div className="relative z-20 transform transition-transform duration-300 hover:scale-[1.02] active:scale-[0.98]">
                             <ShimmerButton
-                                onClick={handleContactToggle}
+                                onClick={onContactToggle}
                                 className="shadow-[0_20px_48px_-12px_rgba(0,0,0,0.25)] hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.35)] transition-shadow duration-300 h-10 md:h-11 px-5 md:px-7"
                             >
                                 <span className="relative z-10 flex items-center gap-2 text-xs font-bold tracking-[0.05em] uppercase">

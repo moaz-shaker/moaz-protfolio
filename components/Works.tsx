@@ -21,7 +21,7 @@ const projects: Project[] = [
     description: "Comprehensive performance overview of sales, profits, and customer behavior with YoY comparisons.",
     link: "https://github.com/moaz-shaker/Sales-Analysis-Dashboard-Tableau",
     tags: ["Tableau", "Sales", "KPIs"],
-    image: "https://www.moaz.solutions/pics/projects/super%20store/Executive%20Summary(Home).webp",
+    image: "/pics/projects/super store/Executive Summary(Home).webp",
     color: "#E97627"
   },
   {
@@ -31,7 +31,7 @@ const projects: Project[] = [
     description: "Star and snowflake schema design for computer workstations sales data with BI-optimized cleaning.",
     link: "https://github.com/moaz-shaker/Data-Modeling/blob/main/Data%20Modeling%20Project.ipynb",
     tags: ["Data Modeling", "SQL", "ETL"],
-    image: "https://www.moaz.solutions/pics/projects/ERD/ERD.webp",
+    image: "/pics/projects/ERD/ERD.webp",
     color: "#3B82F6"
   },
   {
@@ -41,7 +41,7 @@ const projects: Project[] = [
     description: "Visual report on booking trends, revenue, guest preferences, and cancellation patterns.",
     link: "https://public.tableau.com/views/HotelBookingAnalysisDashboard_16767863403260/Home",
     tags: ["Tableau", "Hospitality", "Analysis"],
-    image: "https://www.moaz.solutions/pics/projects/hotel%20booking/Hotel-Reservation-Analysis_Home_.webp",
+    image: "/pics/projects/hotel booking/Hotel-Reservation-Analysis_Home_.webp",
     color: "#8B5CF6"
   },
   {
@@ -51,7 +51,7 @@ const projects: Project[] = [
     description: "Budget optimization analysis for a travel insurance company to reduce marketing costs.",
     link: "https://github.com/moaz-shaker",
     tags: ["Marketing", "Optimization", "ROI"],
-    image: "https://www.moaz.solutions/pics/projects/travel/travel%20home.webp",
+    image: "/pics/projects/travel/travel home.webp",
     color: "#10B981"
   },
   {
@@ -61,7 +61,7 @@ const projects: Project[] = [
     description: "Analysis of product survey responses with multiple visualization versions (Diverging, Stacked Bar).",
     link: "https://github.com/moaz-shaker",
     tags: ["Survey", "Visualization", "Insights"],
-    image: "https://www.moaz.solutions/pics/projects/survey/Diverging%20version(Home)%20coursel.webp",
+    image: "/pics/projects/survey/Diverging version(Home) coursel.webp",
     color: "#F59E0B"
   },
   {
@@ -71,7 +71,7 @@ const projects: Project[] = [
     description: "Healthcare analytics helping professionals analyze emergency room admission trends.",
     link: "https://public.tableau.com/app/profile/ahmed.shehata.ali/viz/EmergencyRoomAdmissionDashboard/Home",
     tags: ["Tableau", "Healthcare", "Trends"],
-    image: "https://www.moaz.solutions/pics/projects/ER%20admission/Home-copy.webp",
+    image: "/pics/projects/ER admission/Home-copy.webp",
     color: "#EF4444"
   },
   {
@@ -79,9 +79,9 @@ const projects: Project[] = [
     title: "Video Game Sales (SQL)",
     category: "SQL",
     description: "SQL-based analysis of video game sales data to uncover market trends and top performers.",
-    link: "https://github.com/moaz-shaker",
+    link: "https://github.com/moaz-shaker/Video-Game",
     tags: ["SQL", "Gaming", "Sales"],
-    image: "https://www.moaz.solutions/pics/projects/golden%20games/golden-game.webp",
+    image: "/pics/projects/golden games/golden-game.webp",
     color: "#6366F1"
   },
   {
@@ -89,9 +89,9 @@ const projects: Project[] = [
     title: "Las Vegas Hotels Reviews",
     category: "Python",
     description: "Detailed sentiment analysis and review exploration of Las Vegas hotels using Python.",
-    link: "https://github.com/moaz-shaker",
+    link: "https://github.com/moaz-shaker/Analysis-of-Las-Vegas-Hotels",
     tags: ["Python", "NLP", "Reviews"],
-    image: "https://www.moaz.solutions/pics/projects/Las-vegas-hotels/Las-vegas-hotels.webp",
+    image: "/pics/projects/Las-vegas-hotels/Las-vegas-hotels.webp",
     color: "#EC4899"
   },
   {
@@ -99,10 +99,60 @@ const projects: Project[] = [
     title: "Sports Retail Revenue (SQL)",
     category: "SQL",
     description: "Optimizing online sports retail revenue through data analysis and SQL querying.",
-    link: "https://github.com/moaz-shaker",
+    link: "https://github.com/moaz-shaker/online-sports-retail-revenue",
     tags: ["SQL", "Retail", "Revenue"],
-    image: "https://www.moaz.solutions/pics/projects/online-sport/online-sports-retail.webp",
+    image: "/pics/projects/online-sport/online-sports-retail.webp",
     color: "#14B8A6"
+  },
+  {
+    id: 10,
+    title: "ETL Data Pipeline (Airflow)",
+    category: "Data Engineering",
+    description: "End-to-end automated ETL pipeline extracting sales data, transforming with Python, and loading via Apache Airflow.",
+    link: "https://github.com/moaz-shaker/ETL-Data-Pipeline-using-AirFlow",
+    tags: ["Airflow", "Python", "ETL", "PostgreSQL"],
+    image: "/pics/projects/241272065-32769201-4ecb-487a-b99.webp",
+    color: "#F59E0B"
+  },
+  {
+    id: 11,
+    title: "Airlines Delayed Analysis",
+    category: "Power BI",
+    description: "Comprehensive analysis of 2M+ U.S. airline flight records to identify delay patterns and causes.",
+    link: "https://github.com/moaz-shaker/Airlines-Delayed-Analysis",
+    tags: ["Power BI", "DAX", "Data Analysis"],
+    image: "https://placehold.co/600x400/8B5CF6/ffffff?text=Airlines+Analysis",
+    color: "#F2C811"
+  },
+  {
+    id: 12,
+    title: "League of Legends Analytics",
+    category: "Power BI",
+    description: "Game data analysis using Excel power query and Power BI to derive champion and role insights.",
+    link: "https://github.com/moaz-shaker/League-of-legends",
+    tags: ["Power BI", "Excel", "Gaming"],
+    image: "/pics/projects/253886060-1ca7f913-d540-44c9-926.webp",
+    color: "#0EA5E9"
+  },
+  {
+    id: 13,
+    title: "HR Attrition Analytics",
+    category: "Power BI",
+    description: "Interactive dashboard for HR departments to analyze employee attrition trends and demographics.",
+    link: "http://github.com/moaz-shaker/HR-Attrition-Analytics",
+    tags: ["Power BI", "HR", "Analytics"],
+    image: "/pics/projects/HR-Attrition-Analytics/Hr-Attritions.png",
+    color: "#EC4899"
+  },
+  {
+    id: 14,
+    title: "Sales Analysis Dashboard (Power BI)",
+    category: "Power BI",
+    description: "Visualizing sales trends, customer demographics, and product performance.",
+    link: "https://github.com/moaz-shaker/Sales-Analysis-Dashboard--Power-bi-",
+    tags: ["Power BI", "Sales", "Business Intelligence"],
+    image: "/pics/projects/super store/Order-Details.webp",
+    color: "#EAB308"
   }
 ];
 
@@ -114,7 +164,7 @@ const ProjectCard = memo(({ project, index }: { project: Project; index: number 
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
+      viewport={{ once: true }}
       transition={{ delay: index * 0.1, duration: 0.5, type: "spring" }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -211,7 +261,7 @@ ProjectCard.displayName = 'ProjectCard';
 
 const Works: React.FC = memo(() => {
   return (
-    <div className="w-full min-h-full flex flex-col items-center p-4 md:p-6 pb-20 overflow-visible">
+    <div className="w-full min-h-full flex flex-col items-center p-4 md:p-6 pb-40 overflow-visible">
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
@@ -231,7 +281,7 @@ const Works: React.FC = memo(() => {
               <motion.path
                 d="M 2 5 Q 50 10 98 5"
                 fill="none"
-                stroke="#FCDD00"
+                stroke="#8B5CF6"
                 strokeWidth="8"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -254,7 +304,7 @@ const Works: React.FC = memo(() => {
       </motion.div>
 
       {/* Projects Grid */}
-      <div className="w-full max-w-[1400px] flex-1 min-h-0">
+      <div className="w-full max-w-[1400px]">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full px-2">
           {projects.map((project, i) => (
             <ProjectCard key={project.id} project={project} index={i} />

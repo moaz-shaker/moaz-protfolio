@@ -638,7 +638,25 @@ const Skills: React.FC = memo(() => {
         className="w-full max-w-[1200px]"
       >
         <div className="text-center mb-8">
-          <h3 className="text-2xl font-display font-bold text-gray-900 mb-2">My Tools</h3>
+          <h3 className="text-2xl md:text-3xl font-display font-bold text-gray-900 mb-2 flex items-baseline justify-center gap-2">
+            My
+            <div className="relative inline-block">
+              <span className="font-designer font-normal text-3xl md:text-4xl relative z-10 px-1">Tools</span>
+              <svg className="absolute w-[110%] -left-[5%] h-[50%] bottom-[5%] -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
+                <motion.path
+                  d="M 2 5 S 20 4 50 6 S 98 4 98 5"
+                  stroke="#8B5CF6"
+                  strokeWidth="8"
+                  strokeLinecap="round"
+                  className="mix-blend-multiply opacity-80"
+                  initial={{ pathLength: 0 }}
+                  whileInView={{ pathLength: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                />
+              </svg>
+            </div>
+          </h3>
           <p className="text-sm text-gray-500">My daily arsenal for data excellence</p>
         </div>
 
