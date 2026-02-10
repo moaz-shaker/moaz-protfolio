@@ -121,7 +121,7 @@ const projects: Project[] = [
     description: "Comprehensive analysis of 2M+ U.S. airline flight records to identify delay patterns and causes.",
     link: "https://github.com/moaz-shaker/Airlines-Delayed-Analysis",
     tags: ["Power BI", "DAX", "Data Analysis"],
-    image: "https://placehold.co/600x400/8B5CF6/ffffff?text=Airlines+Analysis",
+    image: "/pics/projects/airlines/general_analysis.png",
     color: "#F2C811"
   },
   {
