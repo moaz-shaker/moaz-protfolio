@@ -226,7 +226,7 @@ const Hero: React.FC<HeroProps> = memo(({ onNavigate, onContactClick }) => {
                 initial={{ opacity: 0, scale: 0.8, x: 20 }}
                 animate={{ opacity: 1, scale: 1, x: 0 }}
                 transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
-                className="hidden md:block relative z-10 w-[350px] lg:w-[450px]"
+                className="relative z-10 w-[280px] sm:w-[320px] md:w-[350px] lg:w-[450px] mt-8 md:mt-0"
             >
                 <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-4 border-white transform rotate-2 hover:rotate-0 transition-transform duration-500">
                     <img
